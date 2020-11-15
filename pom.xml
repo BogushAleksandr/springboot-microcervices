@@ -29,7 +29,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<springdoc-openapi-webflux-ui>1.4.8</springdoc-openapi-webflux-ui>
+		<springdoc-openapi-webflux-ui>1.5.0</springdoc-openapi-webflux-ui>
 
 	</properties>
 
@@ -71,6 +71,7 @@
 			<artifactId>commons-lang3</artifactId>
 		</dependency>
 
+		<!--Springdoc OpenAPI WebFlux UI-->
 		<!-- https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-webflux-ui -->
 		<dependency>
 			<groupId>org.springdoc</groupId>
