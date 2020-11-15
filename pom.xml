@@ -39,6 +39,7 @@
 			<artifactId>spring-boot-starter-webflux</artifactId>
 		</dependency>
 
+		<!--Spring Boot Maven Plugin-->
 		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-maven-plugin -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
