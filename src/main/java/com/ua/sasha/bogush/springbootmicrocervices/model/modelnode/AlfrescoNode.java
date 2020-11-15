@@ -12,6 +12,7 @@ import java.util.Map;
  * @version 1.0
  * @since 15-11-2020
  */
+
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
         "entry"

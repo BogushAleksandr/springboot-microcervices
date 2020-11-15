@@ -22,6 +22,7 @@ import javax.validation.constraints.NotEmpty;
  * @version 1.0
  * @since 15-11-2020
  */
+
 @Tag(name = "people", description = "Person CRUD operation ")
 @RestController
 @RequestMapping("/api")
