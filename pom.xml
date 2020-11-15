@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
 	<modelVersion>4.0.0</modelVersion>
+
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.4.0</version>
+		<version>2.3.6.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>com.ua.sasha.bogush</groupId>
 	<artifactId>springboot-microcervices</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
@@ -16,6 +19,18 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+
+		<downloadSources>true</downloadSources>
+		<downloadJavadocs>true</downloadJavadocs>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<springdoc-openapi-webflux-ui>1.4.8</springdoc-openapi-webflux-ui>
+
 	</properties>
 
 	<dependencies>
@@ -39,6 +54,21 @@
 			<artifactId>reactor-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+		<!--The Apache Commons Lang 3 library provides support for manipulation of core classes of the Java APIs.
+       This support includes methods for handling strings, numbers, dates, concurrency, object reflection and more.-->
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.springdoc/springdoc-openapi-webflux-ui -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-webflux-ui</artifactId>
+			<version>${springdoc-openapi-webflux-ui}</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -46,6 +76,16 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<mainClass>com.ua.sasha.bogush.springbootmicrocervices.SpringbootAlfrescoMicrocervicesApplication</mainClass>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
