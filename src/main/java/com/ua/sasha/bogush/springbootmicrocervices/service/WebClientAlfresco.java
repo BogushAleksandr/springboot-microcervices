@@ -1,4 +1,4 @@
-package com.ua.sasha.bogush.springbootmicrocervices.alfresco;
+package com.ua.sasha.bogush.springbootmicrocervices.service;
 
 import com.ua.sasha.bogush.springbootmicrocervices.pojoconfig.Alfresco;
 import org.springframework.stereotype.Service;
