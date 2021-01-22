@@ -11,7 +11,7 @@ import org.springframework.context.annotation.PropertySource;
  */
 
 @Configuration
-@PropertySource("file:${WORK_ALF}/codecs.properties")
+@PropertySource("file:${SETTING_ASYNCH_REST_FUL}/codecs.properties")
 @ConfigurationProperties(prefix = "codecs")
 public class WebClientCodecs {
     private int byteCount;

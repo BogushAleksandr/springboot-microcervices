@@ -11,7 +11,7 @@ import org.springframework.context.annotation.PropertySource;
  */
 
 @Configuration
-@PropertySource("file:${WORK_ALF}/alfresco.properties")
+@PropertySource("file:${SETTING_ASYNCH_REST_FUL}/alfresco.properties")
 @ConfigurationProperties(prefix = "alfresco")
 public class Alfresco {
     private String httpurl;

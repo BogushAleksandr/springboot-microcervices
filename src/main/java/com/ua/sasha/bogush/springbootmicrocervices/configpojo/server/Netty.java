@@ -11,7 +11,7 @@ import org.springframework.context.annotation.PropertySource;
  */
 
 @Configuration
-@PropertySource("file:${WORK_ALF}/netty.properties")
+@PropertySource("file:${SETTING_ASYNCH_REST_FUL}/netty.properties")
 @ConfigurationProperties(prefix = "netty")
 public class Netty {
     private int port;
