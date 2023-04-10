@@ -7,24 +7,24 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.3.6.RELEASE</version>
+		<version>3.0.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 
 	<groupId>com.ua.sasha.bogush</groupId>
-	<artifactId>springboot-microcervices</artifactId>
+	<artifactId>springboot-microservices</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>springboot-alfresco-microcervices</name>
+	<name>springboot-alfresco-microservices</name>
 	<description>Demo project on Spring Boot, Netty and API from Alfresco</description>
 
 	<properties>
 		<!-- The main class to start by executing "java -jar" -->
-		<start-class>com.ua.sasha.bogush.springbootmicrocervices.RestApp</start-class>
+		<start-class>com.ua.sasha.bogush.springbootmicroservices.RestApp</start-class>
 
-		<java.version>1.8</java.version>
+		<java.version>17</java.version>
 
-		<maven.compiler.source>1.8</maven.compiler.source>
-		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
 
 		<downloadSources>true</downloadSources>
 		<downloadJavadocs>true</downloadJavadocs>
@@ -32,7 +32,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<springdoc-openapi-webflux-ui.version>1.5.2</springdoc-openapi-webflux-ui.version>
+		<springdoc-openapi-webflux-ui.version>1.7.0</springdoc-openapi-webflux-ui.version>
 	</properties>
 
 	<dependencies>
@@ -41,6 +41,14 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webflux</artifactId>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
+		<dependency>
+			<groupId>org.yaml</groupId>
+			<artifactId>snakeyaml</artifactId>
+			<version>2.0</version>
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
